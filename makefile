@@ -28,6 +28,7 @@ linux: $(CHUGS)
 linux-alsa: $(CHUGS)
 linux-jack: $(CHUGS)
 win32: $(CHUGS_WIN32)
+mingw: $(CHUGS)
 
 $(CHUGS): 
 	CHUCK_STRICT=1 make -C $(dir $@) $(MAKECMDGOALS)

@@ -6,9 +6,13 @@
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
+#ifdef __MINGW32__
+#include <malloc.h>
+#else
 #include <alloca.h>
+#endif
 
-int sigmund_ilog2(int n)
+int sigmund_ilog2(int n)minw alloca
 {
   int ret = -1;
   while (n)

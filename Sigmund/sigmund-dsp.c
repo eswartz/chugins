@@ -7,7 +7,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#ifdef __MINGW32__
+#include <malloc.h>
+#else
 #include <alloca.h>
+#endif
+
 
 int sigmund_ilog2(int n)
 {

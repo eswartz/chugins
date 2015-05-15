@@ -151,6 +151,10 @@ typedef struct { SAMPLE re ; SAMPLE im ; } t_CKCOMPLEX_SAMPLE;
 #ifndef usleep
 #define usleep(x) Sleep( (x / 1000 <= 0 ? 1 : x / 1000) )
 #endif
+
+#define random() rand()
+#define srandom(s) srand(s)
+
 #pragma warning (disable : 4996)  // stdio deprecation
 #pragma warning (disable : 4786)  // stl debug info
 #pragma warning (disable : 4312)  // type casts from void*

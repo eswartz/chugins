@@ -1,0 +1,6 @@
+
+FLAGS=-D__PLATFORM_WIN32__ -D_WIN32_WINNT=0x0501 -D__WINDOWS_DS__ -I$(CK_SRC_PATH)
+LDFLAGS=-shared -lstdc++ -lm -luser32 -lws2_32 -lwinmm
+
+LD=g++
+CXX=g++
