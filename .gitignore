@@ -27,3 +27,6 @@
 */*.vcxproj.user
 */*.vcxproj.filters
 ipch
+
+built/
+
